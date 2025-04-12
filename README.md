@@ -31,6 +31,3 @@ Bar charts:
   2 showing Top 10 and bottom 10 countries by inflation
   2 showing Top 10 and bottom 10 countries by volatility rates
 Annotated scatter plots: Inflation vs volatility rates used to show outliers
-
-## Author
-Caleb Kimondo
