@@ -21,9 +21,13 @@ OECD API
 
 ## Insights and key takeways
 The 3 countries with the highest inflation rates are: Argentina, Costa Rica, Turkey. This show strong indicators of ongoing economic strain. Which is bad for business.
+
 The 3 areas with the lowest inflation rates are: The Euro Area, Finland, Italy. This indicates relative price stability. Possibly strong purchasing power.
+
 The 3 countries with the highest volatility rates are: Brazil, Turkey, Bulgaria. This shows that inflation trends are unpredictable and is risky for long-term business planning.
+
 The 3 areas with the lowest volatility rates are: Potrugal, G20, Canada. This shows that they have very stable inflation, ideal conditions for investors and policy makers.
+
 The evident outliers are Argentina and Brazil. This shows that they experience both high inflation and high volatility. Very bad for businesses. Businesses should avoid the two.
 
 ## Visualizations
