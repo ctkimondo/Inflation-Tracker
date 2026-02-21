@@ -1,0 +1,32 @@
+name: Weekly Inflation Refinery Run
+
+# 1. When to run
+on: 
+  schedule: 
+   - cron: '0 8 * * 1' # Every Monday at 8:00 AM
+  workflow_dispatch: # Adds a "Run" button so as to trigger it manually
+
+# 2. What to do
+jobs:
+  refinery_job:
+    runs-on: ubuntu-latest # Use a fresh Linux computer in Github's cloud
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run the Pipeline
+        env: 
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
+        run: python src/main.py
+    
