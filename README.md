@@ -11,7 +11,7 @@ This system is built using a Modular Design to separate concerns and ensure reli
 - Loading (src/load.py): Persists data into Apache Parquet format, utilizing columnar storage to optimize for speed and disk space (80% more efficient than CSV).
 - Automation: Integrated with GitHub Actions (CI/CD) to trigger a full refinery run every Monday at 8:00 AM UTC via Cron scheduling.
 - Containerization: Fully packaged with Docker to ensure 100% reproducibility across any cloud environment.
-
+- ecouples storage from compute by streaming transformed Parquet files to an S3 bucket.
 # Analytical Insights
 While the refinery moves the data, the analysis identifies economic risk:
 - High-Risk Zones: Identifies countries like Argentina and Turkey as outliers with both high inflation and high volatility.
